@@ -1,7 +1,7 @@
 # Automation Starter Kit
 ## Setup
 
-To start the server to test the application, you can run:
+To run locally, you can start the server to test the application, you can run:
 
 ```sh
 npm i
@@ -11,6 +11,10 @@ npm start
 Using a web browser, enter the address:
 
 - [http://localhost:3000](http://localhost:3000)
+
+If you prefer to use a remote version to test against, you can see the app here:
+
+- [https://sfg20.github.io/automation-starter-kit](https://sfg20.github.io/automation-starter-kit)
 
 You should see the game board that the user sees. This is the application we will be testing.
 
