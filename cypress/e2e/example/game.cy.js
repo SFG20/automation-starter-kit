@@ -1,9 +1,9 @@
 describe('Turn based game', () => {
     before(() => {
         cy.visit('https://sfg20.github.io/automation-starter-kit/') // Uncomment this line to visit the remote hosted site if you're not running it locally.
-      //  cy.visit('http://localhost:3000') // If you are using a local server, you can use this line instead of the line above.
+        //  cy.visit('http://localhost:3000') // If you are using a local server, you can use this line instead of the line above.
     })
-    
+
     it('Example: X Goes First', () => {
         cy.contains('[data-testid=message]', 'X goes first')
     })
@@ -47,7 +47,7 @@ describe('Turn based game', () => {
         cy.contains('.cell5', 'X')
         cy.contains('[data-testid=message]', 'Next turn is 0')
     })
-    
+
     it('Example: Places an 0 in top right sqaure', () => {
         cy.get('.cell3').click()
         cy.contains('.cell3', '0')
@@ -106,7 +106,6 @@ describe('Turn based game', () => {
         cy.contains('[data-testid=message]', 'Next turn is 0')
     })
 
-
     it('Example: Places an 0 in the Middle Square', () => {
         cy.get('[id=4]').click()
         cy.contains('[id=4]', '0')
@@ -123,28 +122,27 @@ describe('Turn based game', () => {
         cy.get('[id=8]').click()
         cy.contains('[id=8]', '0')
 
-    it('Example: Places an 0 in the middle square', () => {
-        cy.get('.cell5').click()
-        cy.contains('.cell5', '0')
+        it('Example: Places an 0 in the middle square', () => {
+            cy.get('.cell5').click()
+            cy.contains('.cell5', '0')
 
-        cy.contains('[data-testid=message]', 'Next turn is X')
+            cy.contains('[data-testid=message]', 'Next turn is X')
+        })
+
+        it('Example: Places an X in the top middle square', () => {
+            cy.get('[id=1]').click()
+            cy.contains('[id=1]', 'X')
+            cy.contains('[data-testid=message]', 'Next turn is 0')
+        })
+
+        it('Example: Places an 0 in the top left', () => {
+            cy.get('[id=0]').click()
+            cy.contains('[id=0]', '0')
+            cy.contains('[data-testid=message]', '0 wins!')
+        })
+
+        it('Example: Click Restart', () => {
+            cy.get('h5').click()
+        })
     })
-
-    it('Example: Places an X in the top middle square', () => {
-        cy.get('[id=1]').click()
-        cy.contains('[id=1]', 'X')
-        cy.contains('[data-testid=message]', 'Next turn is 0')
-    })
-
-    it('Example: Places an 0 in the top left', () => {
-        cy.get('[id=0]').click()
-        cy.contains('[id=0]', '0')
-        cy.contains('[data-testid=message]', '0 wins!')
-    })
-
-    it('Example: Click Restart', () => {
-        cy.get('h5').click()
-    })
-
-
 })
