@@ -1,44 +1,3 @@
-<<<<<<< HEAD
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add("dismiss", { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-
-let LOCAL_STORAGE_MEMORY = {};
-
-Cypress.Commands.add("saveLocalStorage", () => {
-  Object.keys(localStorage).forEach(key => {
-    LOCAL_STORAGE_MEMORY[key] = localStorage[key];
-  });
-});
-
-Cypress.Commands.add("restoreLocalStorage", () => {
-  Object.keys(LOCAL_STORAGE_MEMORY).forEach(key => {
-    localStorage.setItem(key, LOCAL_STORAGE_MEMORY[key]);
-  });
-});
-=======
 /// <reference types="cypress" />
 
 let LOCAL_STORAGE_MEMORY = {}
@@ -92,4 +51,3 @@ Cypress.Commands.add('testDevelopmentEnvironment', () => {
 // client_id: 928d3739-c454-48d5-96ff-916ef9a9aed9 //TODO find where this is coming from, presumably just generated hitting the site for tracking.
 // username: scheduleeditor@sfg20.co.uk
 // password: Qwerty10
->>>>>>> 6048b935e82fae3ac61b4cb1fb9be7218c0bd845
