@@ -7,4 +7,10 @@ describe('Turn based game', () => {
     it('Example: X Goes First', () => {
         cy.contains('[data-testid=message]', 'X goes first')
     })
+
+    it('Example: Places an X in the top right square', () => {
+        cy.get('#2').click()
+        cy.contains('#2', 'X')
+        cy.contains('[data-testid=message]', 'Next turn is 0')
+    })
 })
