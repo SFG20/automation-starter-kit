@@ -4,11 +4,11 @@
     "description": "Automation starter kit",
     "main": "index.js",
     "dependencies": {
-        "cypress": "^10.0.0"
+        "cypress": "^13.8.1"
     },
     "devDependencies": {
         "prettier": "^2.2.1",
-        "serve": "^14.0.1"
+        "serve": "^14.2.3"
     },
     "scripts": {
         "test": "cypress run",
@@ -17,8 +17,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SFG20/automation-starter-kit"
+        "url": "git+https://github.com/globalroo/automation-starter-kit.git"
     },
-    "author": "Andy Davies",
+    "author": "T.S.Davies",
     "license": "MIT"
 }

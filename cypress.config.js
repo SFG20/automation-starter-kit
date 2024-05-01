@@ -1,13 +1,5 @@
 const { defineConfig } = require('cypress')
-const fs = require('fs')
 
-// Get environment variables from .git for deploy. Github actions have replaced it.
-// const [__, branch] = fs.readFileSync("../.git/HEAD", "utf-8").trim().split("refs/heads/")
-// const branchURL = branch.split("/").join("-")
-
-const users = require('./cypress/fixtures/users.json')
-const servers = require('./cypress/fixtures/servers.json')
-console.log(servers)
 module.exports = {
     default: defineConfig({
         projectId: 'evt7b4',
@@ -17,9 +9,9 @@ module.exports = {
                 host: 'localhost',
                 port: '3030',
                 protocol: 'http',
-                users,
-                servers,
             },
+            specPattern: ['cypress/e2e/**/*.cy.{js, jsx}'],
+            testIsolation: false,
             setupNodeEvents(on, config) {
                 // implement node event listeners here
                 on('task', {
@@ -35,5 +27,3 @@ module.exports = {
         },
     }),
 }
-
-// npx cypress run --record --key 7f1c44fb-fa55-4a12-a518-f33ded694d04

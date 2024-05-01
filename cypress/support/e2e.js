@@ -14,5 +14,5 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './global-before-and-after'
+
 import './commands'

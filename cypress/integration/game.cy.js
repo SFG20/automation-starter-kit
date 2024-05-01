@@ -1,6 +1,6 @@
 describe('Turn based game', () => {
     before(() => {
-        cy.visit('http://localhost:4000/')
+        cy.visit('http://localhost:5000')
     })
     it('Places an X in the top left square', () => {
         cy.get('.cell1').click()
