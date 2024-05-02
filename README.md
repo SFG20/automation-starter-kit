@@ -25,7 +25,7 @@ npm run test:ui // interactive mode
 -   To the left of the elements tab is a 'pointer' icon. Select it and hover of the tictactoe board
 -   Use the above techniques to identify ways to uniquely idenify the square you're interested in
 
-Using the example test in game.spec.js as a guide, try and click another square on the board.
+Using the example test in game.cy.js as a guide, try and click another square on the board.
 
 Try selecting squares using a variety of selectors
 
