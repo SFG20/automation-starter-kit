@@ -25,7 +25,7 @@ npm run test:ui // interactive mode
 -   To the left of the elements tab is a 'pointer' icon. Select it and hover of the tictactoe board
 -   Use the above techniques to identify ways to uniquely idenify the square you're interested in
 
-Using the example test in game.spec.js as a guide, make try and click another square on the board.
+Using the example test in game.spec.js as a guide, try and click another square on the board.
 
 Try selecting squares using a variety of selectors
 
@@ -33,3 +33,10 @@ Try selecting squares using a variety of selectors
 -   by data-testid
 -   by class
 -   by id
+
+Build other test cases
+- Ensure you can't click on the same square twice
+- Ensure the 'next' turn is for the correct 'player' i.e. 0 or X
+- Can the game be won by X / 0?
+- Can the game be drawn?
+- Can you restart the game?
