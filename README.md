@@ -5,7 +5,7 @@
 This will start a web server hosting the turn based game.
 
 ```sh
-PORT=4000 npm start
+npm run start:client
 ```
 
 ## Tooling
@@ -35,8 +35,9 @@ Try selecting squares using a variety of selectors
 -   by id
 
 Build other test cases
-- Ensure you can't click on the same square twice
-- Ensure the 'next' turn is for the correct 'player' i.e. 0 or X
-- Can the game be won by X / 0?
-- Can the game be drawn?
-- Can you restart the game?
+
+-   Ensure you can't click on the same square twice
+-   Ensure the 'next' turn is for the correct 'player' i.e. 0 or X
+-   Can the game be won by X / 0?
+-   Can the game be drawn?
+-   Can you restart the game?
